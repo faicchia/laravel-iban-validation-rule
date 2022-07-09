@@ -1,0 +1,45 @@
+{
+    "name": "faicchia/laravel-iban-validation-rule",
+    "description": "A Laravel rule around jschaedl/iban-validation",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "role": "Author",
+            "name": "Davide Pio Faicchia",
+            "email": "da.faicchia@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "jschaedl/iban-validation": "^1.8",
+        "illuminate/support": "^9.19"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^7.6",
+        "friendsofphp/php-cs-fixer": "^3.8",
+        "pestphp/pest": "^1.21"
+    },
+    "autoload": {
+        "psr-4": {
+            "Faicchia\\IbanValidation\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Faicchia\\IbanValidation\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/pest",
+        "test-coverage": "./vendor/bin/pest --coverage"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        },
+        "sort-packages": true
+    }
+}
