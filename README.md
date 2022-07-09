@@ -23,6 +23,8 @@ If you wish to edit the package translations, you can run the following command 
 php artisan vendor:publish --provider="Faicchia\IbanValidation\IbanValidationRuleServiceProvider"
 ```
 
+English and Italian translations are already shipped with the package.
+
 ## Usage
 
 ```php
